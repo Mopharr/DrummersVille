@@ -1,9 +1,11 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import { Inter } from "@next/font/google";
+import { AiFillPlayCircle } from 'react-icons/ai'
+import styles from "../styles/Home.module.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,109 +17,114 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
+        <nav className={styles.nav}>
+          <div className={styles.logo}>
+            <img src="/dv20.png" alt="Logo" />
           </div>
-        </div>
 
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+          <ul className={styles.navLink}>
+            <li>
+              <Link href="/">Episode</Link>
+            </li>
+            <li>
+              <Link href="/">Episode</Link>
+            </li>
+            <li>
+              <Link href="/">Episode</Link>
+            </li>
+            <li>
+              <Link href="/">Episode</Link>
+            </li>
+          </ul>
+        </nav>
+        <header className={styles.header}>
+          <div className={styles.text}>
+            <h1>
+              Where Passion <br /> Meets Inspiration.
+            </h1>
+            <div className={styles.spanText}>
+              <span>
+                Bringing to you inspiring, educating, motivating and
+                transforming interviews from pro drummers and other music
+                professionals.
+              </span>
+            </div>
           </div>
-        </div>
+          <div className={styles.text2}>
+            <p>Drums</p>
+          </div>
+        </header>
+        <section className={styles.pPod}>
+          <img src="/dv22.png" alt="" />
+          <p>Play Latest Podcast</p>
+        </section>
+        <section className={styles.section}>
+          <span>Beats</span>
+          <p>Music</p>
+          <div className={styles.podcast}>
+            <img src="/dv06.png" alt="" />
+            <img src="/dv05.png" alt="" />
+            <img src="/dv04.png" alt="" />
+            <img src="/dv03.png" alt="" />
+            <img src="/dv02.png" alt="" />
+            <img src="/dv01.png" alt="" />
+          </div>
+        </section>
+        <section className={styles.images}>
+          <div className={styles.img1}></div>
+          <div className={styles.img2}></div>
+          <div className={styles.img3}></div>
+          <div className={styles.img4}></div>
+        </section>
 
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        <section className={styles.podCastSec}>
+          <h1>Podcasts</h1>
+          <div className={styles.castSecOption}>
+            <div className={styles.castCont}>
+              <img src="/dv14.png" alt="" />
+              <div className={styles.castText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button>
+                  <AiFillPlayCircle />
+                  Play
+                </button>
+              </div>
+            </div>
+            <div className={styles.castCont}>
+              <img src="/dv15.png" alt="" />
+              <div className={styles.castText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button>
+                  <AiFillPlayCircle />
+                  Play
+                </button>
+              </div>
+            </div>
+            <div className={styles.castCont}>
+              <img src="/dv13.png" alt="" />
+              <div className={styles.castText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                </p>
+                <button>
+                  <AiFillPlayCircle />
+                  Play
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
-  )
+  );
 }
