@@ -247,10 +247,9 @@
 
 .castText {
   padding: 1em;
-  margin-top: -.5em;
+  margin-top: -0.5em;
   background: #292929;
   border-radius: 0px 0px 24px 24px;
-
 }
 .castText h3 {
   font-family: "Work Sans", sans-serif;
@@ -290,8 +289,275 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.0125em;
-
-  /* White */
-
   color: #ffffff;
+}
+
+.view {
+  padding: 8px 16px;
+  gap: 8px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0125em;
+  color: #ffffff;
+  margin: 2em auto;
+}
+
+.musicImage {
+  display: flex;
+  justify-content: center;
+  height: 705px;
+  position: relative;
+}
+.musicCap {
+  width: 800px;
+  position: absolute;
+  right: -15%;
+  top: -10%;
+  z-index: 1;
+}
+.musicImage img {
+  height: 100%;
+  width: 100%;
+  /* object-fit: contain; */
+}
+
+.blogs {
+  max-width: 1140px;
+  width: 100%;
+  margin: -20em auto 2em;
+  z-index: 11;
+}
+
+.blogs h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: -0.015em;
+  margin: 20px 0 1em;
+  text-align: left;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke-color: linear-gradient(90deg, #E8B41C 0%, rgba(232, 180, 28, 0) 0.01%, #E84E1C 100%); */
+  -webkit-text-stroke-color: #e84e1c;
+}
+
+.blogOpt {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.BlogOptCon {
+  width: 500px;
+  height: 200px;
+  display: flex;
+}
+
+.BlogOptCon img {
+  width: 35%;
+  height: 100%;
+}
+
+.blogText {
+  height: 200px;
+  background: #292929;
+  border-radius: 0px 24px 24px 0px;
+  padding: 1em;
+}
+
+.blogText h3 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.0015em;
+  color: #ffffff;
+  margin: 0 0 0.5em;
+}
+.blogText p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #757575;
+  margin: 0 0 0.5em;
+}
+.blogText button {
+  width: 59px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0125em;
+  color: #ffffff;
+  background-color: transparent;
+}
+.comment {
+  max-width: 1140px;
+  width: 100%;
+  margin: 20em auto 2em;
+  z-index: 11;
+}
+
+.comment h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: -0.015em;
+  margin: 20px 0 1em;
+  text-align: right;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke-color: linear-gradient(90deg, #E8B41C 0%, rgba(232, 180, 28, 0) 0.01%, #E84E1C 100%); */
+  -webkit-text-stroke-color: #e84e1c;
+}
+
+.commentOpt {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  background: url(/dv011.png);
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+}
+
+.commentCon {
+  width: 364px;
+  height: 232px;
+  background: #292929;
+  border-radius: 24px;
+  padding: 1em;
+  margin-bottom: 1.5em;
+}
+.commentCon p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #757575;
+  margin: 0 0 1em;
+}
+
+.prof {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+
+.prof img {
+  width: 56px;
+  height: 56px;
+}
+.prof span {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.0015em;
+  color: #ffffff;
+}
+
+.community {
+  max-width: 1140px;
+  width: 100%;
+  margin: 10em auto 2em;
+}
+
+.community h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: -0.015em;
+  margin: 20px 0 1em;
+  text-align: left;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke-color: linear-gradient(90deg, #E8B41C 0%, rgba(232, 180, 28, 0) 0.01%, #E84E1C 100%); */
+  -webkit-text-stroke-color: #0074e5;
+}
+
+.communityCap {
+  width: 752px;
+  height: 364px;
+  margin: auto;
+  background: #292929;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.communityCap img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.communityCap h2 {
+   font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.0025em;
+  color: #ffffff;
+  margin-bottom: .5em;
+}
+
+.communityCap p {
+   font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #757575;
+  margin-bottom: 2em;
+}
+
+.communityCap button {
+  width: 110px;
+  height: 48px;
+  background: #003f7d;
+  border-radius: 100px;
+   font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0125em;
+  color: #ffffff;
+  border: none;
 }

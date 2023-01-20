@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import { AiFillPlayCircle } from 'react-icons/ai'
+import { AiFillPlayCircle } from "react-icons/ai";
 import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -122,6 +122,168 @@ export default function Home() {
                 </button>
               </div>
             </div>
+          </div>
+
+          <div className={styles.musicImage}>
+            <button className={styles.view}>View All</button>
+
+            <div className={styles.musicCap}>
+              <img src="dv1.png" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.blogs}>
+          <h1>Blogs</h1>
+          <div className={styles.blogOpt}>
+            <div className={styles.BlogOptCon}>
+              <img src="dv10.png" alt="" />
+              <div className={styles.blogText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. In risus massa
+                  placerat rutrum. Odio nunc nullam a et cursus scelerisque
+                  faucibus. Varius ullamcorper rhoncus.
+                </p>
+                <button>Read</button>
+              </div>
+            </div>
+            <div className={styles.BlogOptCon}>
+              <img src="dv12.png" alt="" />
+              <div className={styles.blogText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. In risus massa
+                  placerat rutrum. Odio nunc nullam a et cursus scelerisque
+                  faucibus. Varius ullamcorper rhoncus.
+                </p>
+                <button>Read</button>
+              </div>
+            </div>
+            <div className={styles.BlogOptCon}>
+              <img src="dv14.png" alt="" />
+              <div className={styles.blogText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. In risus massa
+                  placerat rutrum. Odio nunc nullam a et cursus scelerisque
+                  faucibus. Varius ullamcorper rhoncus.
+                </p>
+                <button>Read</button>
+              </div>
+            </div>
+            <div className={styles.BlogOptCon}>
+              <img src="dv13.png" alt="" />
+              <div className={styles.blogText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. In risus massa
+                  placerat rutrum. Odio nunc nullam a et cursus scelerisque
+                  faucibus. Varius ullamcorper rhoncus.
+                </p>
+                <button>Read</button>
+              </div>
+            </div>
+            <div className={styles.BlogOptCon}>
+              <img src="dv12.png" alt="" />
+              <div className={styles.blogText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. In risus massa
+                  placerat rutrum. Odio nunc nullam a et cursus scelerisque
+                  faucibus. Varius ullamcorper rhoncus.
+                </p>
+                <button>Read</button>
+              </div>
+            </div>
+            <div className={styles.BlogOptCon}>
+              <img src="dv11.png" alt="" />
+              <div className={styles.blogText}>
+                <h3>Bringing back the tradition</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. In risus massa
+                  placerat rutrum. Odio nunc nullam a et cursus scelerisque
+                  faucibus. Varius ullamcorper rhoncus.
+                </p>
+                <button>Read</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className={styles.comment}>
+          <h1>Word on the Street</h1>
+          <div className={styles.commentOpt}>
+            <div className={styles.commentCon}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Quam orci aliquet id non
+                sed placerat. A vitae aliquam mauris feugiat suscipit. At neque
+                praesent id non nisl etiam tempor pharetra dapibus.
+              </p>
+
+              <div className={styles.prof}>
+                <img src="dv5.png" alt="" />
+                <span>Esther Howard</span>
+              </div>
+            </div>
+            <div className={styles.commentCon}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Quam orci aliquet id non
+                sed placerat. A vitae aliquam mauris feugiat suscipit. At neque
+                praesent id non nisl etiam tempor pharetra dapibus.
+              </p>
+
+              <div className={styles.prof}>
+                <img src="dv5.png" alt="" />
+                <span>Esther Howard</span>
+              </div>
+            </div>
+            <div className={styles.commentCon}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Quam orci aliquet id non
+                sed placerat. A vitae aliquam mauris feugiat suscipit. At neque
+                praesent id non nisl etiam tempor pharetra dapibus.
+              </p>
+
+              <div className={styles.prof}>
+                <img src="dv5.png" alt="" />
+                <span>Esther Howard</span>
+              </div>
+            </div>
+            <div className={styles.commentCon}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Quam orci aliquet id non
+                sed placerat. A vitae aliquam mauris feugiat suscipit. At neque
+                praesent id non nisl etiam tempor pharetra dapibus.
+              </p>
+
+              <div className={styles.prof}>
+                <img src="dv5.png" alt="" />
+                <span>Esther Howard</span>
+              </div>
+            </div>
+            <div className={styles.commentCon}>
+              <p>
+                Lorem ipsum dolor sit amet consectetur. Quam orci aliquet id non
+                sed placerat. A vitae aliquam mauris feugiat suscipit. At neque
+                praesent id non nisl etiam tempor pharetra dapibus.
+              </p>
+
+              <div className={styles.prof}>
+                <img src="dv5.png" alt="" />
+                <span>Esther Howard</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.community}>
+          <h1>Community</h1>
+
+          <div className={styles.communityCap}>
+            <img src="/dv022.png" alt="" />
+            <h2>Join our community</h2>
+            <p>A community of individuals united by rhythm and beat.</p>
+            <button>Join</button>
           </div>
         </section>
       </main>
