@@ -2,7 +2,10 @@ import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import { AiFillPlayCircle } from "react-icons/ai";
+import { AiFillPlayCircle, AiFillInstagram } from "react-icons/ai";
+import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";
+import { MdEmail } from 'react-icons/md'
+import { GoKebabVertical } from 'react-icons/go'
 import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,10 +21,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <nav className={styles.nav}>
-          <div className={styles.logo}>
+          <Link href="/" className={styles.logo}>
             <img src="/dv20.png" alt="Logo" />
+          </Link>
+          <div className={styles.ham}>
+            <GoKebabVertical className={styles.hamIcon} />
+            <GoKebabVertical className={styles.hamIcon} />
+            <GoKebabVertical className={styles.hamIcon} />
           </div>
-
           <ul className={styles.navLink}>
             <li>
               <Link href="/">Episode</Link>
@@ -286,6 +293,25 @@ export default function Home() {
             <button>Join</button>
           </div>
         </section>
+
+        <footer className={styles.footer}>
+          <div className={styles.footTop}>
+            <Link href="/" className={styles.footLogo}>
+              <img src="/dv20.png" alt="Logo" />
+            </Link>
+            <div className={styles.social}>
+              <BsFacebook />
+              <AiFillInstagram />
+              <BsTwitter />
+              <BsYoutube />
+              <MdEmail />
+            </div>
+          </div>
+
+          <div className={styles.footBottom}>
+            <p>2022, Drummersville Podcast. All rights reserved.</p>
+          </div>
+        </footer>
       </main>
     </>
   );

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:display=swap");
 
 .main {
-  padding: 1em 0;
+  padding: 1em 0 0;
   background: #0f0f0f;
 }
 
@@ -23,13 +23,13 @@
   width: 100%;
 }
 
-.nav ul {
+.navLink {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2em;
 }
-.nav ul li {
+.navLink li {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -45,7 +45,7 @@
   align-items: flex-start;
   justify-content: space-between;
   padding: 0em 0 1em;
-  max-width: 1200px;
+  max-width: 1140px;
   margin: 8em auto 6em;
   width: 100%;
 }
@@ -139,8 +139,7 @@
   letter-spacing: -0.015em;
   opacity: 0.8;
   margin-top: 20px;
-  width: 20%;
-  margin-left: auto;
+  text-align: right;
   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   /* -webkit-text-stroke-color: linear-gradient(90deg, #E8B41C 0%, rgba(232, 180, 28, 0) 0.01%, #E84E1C 100%); */
@@ -152,12 +151,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 2em;
-  height: 38px;
+
   margin-bottom: 4em;
 }
 .podcast img {
   height: 100%;
+  height: 38px;
 }
 .images {
   display: flex;
@@ -217,7 +218,7 @@
   line-height: 113px;
   letter-spacing: -0.015em;
   margin: 20px 0 1em auto;
-  width: 38%;
+  text-align: right;
   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   /* -webkit-text-stroke-color: linear-gradient(90deg, #E8B41C 0%, rgba(232, 180, 28, 0) 0.01%, #E84E1C 100%); */
@@ -524,7 +525,7 @@
   object-fit: contain;
 }
 .communityCap h2 {
-   font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 34px;
@@ -532,11 +533,11 @@
   text-align: center;
   letter-spacing: 0.0025em;
   color: #ffffff;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .communityCap p {
-   font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -552,7 +553,7 @@
   height: 48px;
   background: #003f7d;
   border-radius: 100px;
-   font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -560,4 +561,135 @@
   letter-spacing: 0.0125em;
   color: #ffffff;
   border: none;
+}
+
+.footer {
+  /* height: 120px; */
+  background: #292929;
+  padding: 1em 0;
+}
+
+.footTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footTop img {
+  width: 97px;
+  height: 22.75px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  color: #999999;
+  font-size: 20px;
+}
+
+.footBottom {
+  border-top: 1px solid #999999;
+  padding: 1em 0 0;
+  margin-top: 1em;
+}
+
+.footBottom p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0025em;
+  color: #757575;
+  text-align: center;
+}
+.ham {
+  display: none;
+}
+
+@media (max-width: 1440px) {
+  .images {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .nav,
+  .header,
+  .footTop,
+  .community,
+  .comment,
+  .podCastSec,
+  .blogs {
+    width: 98%;
+   }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column-reverse;
+    margin: 3em auto 3em;
+  }
+
+  .text2 {
+    width: 100%;
+    text-align: right;
+  }
+  .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .navLink {
+    display: none;
+  }
+  .ham {
+    display: block;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .hamIcon {
+    width: 10px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text2 p,
+  .section span,
+  .section p, 
+  .podCastSec h1{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 56px;
+  }
+  .text h1 {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 90px;
+  }
+  .section {
+    margin: 2em 0;
+  }
+
+  .podcast {
+    margin-bottom: 4em;
+  }
+  .podcast img {
+    height: 23px;
+  }
+
+  .images {
+    height: 300px;
+  }
+  
 }
