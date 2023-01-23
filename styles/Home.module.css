@@ -229,12 +229,13 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   gap: 2em;
 }
 
 .castCont {
-  width: 364px;
+  width: 320px;
   /* height: 450px; */
   border-radius: 24px;
 }
@@ -627,7 +628,21 @@
   .podCastSec,
   .blogs {
     width: 98%;
-   }
+  }
+  .castSecOption {
+    justify-content: space-around;
+    /* gap: 1em; */
+  }
+  .blogOpt {
+    gap: 2em 1em;
+  }
+  .BlogOptCon {
+    width: 460px;
+    height: 230px;
+  }
+  .blogText {
+    height: 230px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -661,13 +676,33 @@
     width: 10px;
     height: 30px;
   }
+  .musicImage {
+    height: 400px;
+  }
+  .musicCap {
+    right: 0;
+    height: 100%;
+    width: 440.0625px;
+  }
+  .blogs {
+    margin-top: -16em;
+  }
+  .BlogOptCon {
+    width: 90%;
+    margin: auto;
+    height: 200px;
+  }
+  .blogText {
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {
   .text2 p,
   .section span,
-  .section p, 
-  .podCastSec h1{
+  .section p,
+  .blogs h1,
+  .podCastSec h1 {
     font-weight: 600;
     font-size: 70px;
     line-height: 56px;
@@ -691,5 +726,13 @@
   .images {
     height: 300px;
   }
-  
+  .BlogOptCon {
+    width: 98%;
+  }
+}
+
+@media (max-width: 700px) {
+  .castCont {
+    width: 90%;
+  }
 }
