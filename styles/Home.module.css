@@ -490,7 +490,7 @@
 .community {
   max-width: 1140px;
   width: 100%;
-  margin: 10em auto 2em;
+  margin: 10em auto 5em;
 }
 
 .community h1 {
@@ -612,6 +612,12 @@
 .ham {
   display: none;
 }
+.mbImg{
+  display: none ;
+}
+.lpImg{
+  display: block;
+}
 
 @media (max-width: 1440px) {
   .images {
@@ -695,6 +701,9 @@
   .blogText {
     height: 200px;
   }
+    .comment {
+    margin: 10em 0 2em;
+  }
 }
 
 @media (max-width: 768px) {
@@ -702,7 +711,8 @@
   .section span,
   .section p,
   .blogs h1,
-  .podCastSec h1 {
+  .podCastSec h1,
+  .comment h1 {
     font-weight: 600;
     font-size: 70px;
     line-height: 56px;
@@ -729,10 +739,32 @@
   .BlogOptCon {
     width: 98%;
   }
+
 }
 
 @media (max-width: 700px) {
   .castCont {
     width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  .BlogOptCon {
+    height: 100%;
+    flex-direction: column;
+  }
+  .BlogOptCon img{
+    width: 100%;
+    height: 200px;
+  }
+  .mbImg {
+    display: block;
+  }
+  .lpImg {
+    display: none;
+  }
+  .blogText {
+    height: 100%;border-radius: 0px 0px 24px 24px;
   }
 }

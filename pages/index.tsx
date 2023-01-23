@@ -4,8 +4,8 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import { AiFillPlayCircle, AiFillInstagram } from "react-icons/ai";
 import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";
-import { MdEmail } from 'react-icons/md'
-import { GoKebabVertical } from 'react-icons/go'
+import { MdEmail } from "react-icons/md";
+import { GoKebabVertical } from "react-icons/go";
 import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -144,7 +144,8 @@ export default function Home() {
           <h1>Blogs</h1>
           <div className={styles.blogOpt}>
             <div className={styles.BlogOptCon}>
-              <img src="dv10.png" alt="" />
+              <img src="dv10.png" alt="" className={styles.lpImg} />
+              <img src="/ndv5.png" alt="" className={styles.mbImg} />
               <div className={styles.blogText}>
                 <h3>Bringing back the tradition</h3>
                 <p>
@@ -156,7 +157,9 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.BlogOptCon}>
-              <img src="dv12.png" alt="" />
+              <img src="dv12.png" alt="" className={styles.lpImg} />
+              <img src="/ndv4.png" alt="" className={styles.mbImg} />
+
               <div className={styles.blogText}>
                 <h3>Bringing back the tradition</h3>
                 <p>
@@ -168,7 +171,9 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.BlogOptCon}>
-              <img src="dv14.png" alt="" />
+              <img src="dv14.png" alt="" className={styles.lpImg} />
+              <img src="/ndv3.png" alt="" className={styles.mbImg} />
+
               <div className={styles.blogText}>
                 <h3>Bringing back the tradition</h3>
                 <p>
@@ -180,7 +185,9 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.BlogOptCon}>
-              <img src="dv13.png" alt="" />
+              <img src="dv13.png" alt="" className={styles.lpImg} />
+              <img src="/ndv2.png" alt="" className={styles.mbImg} />
+
               <div className={styles.blogText}>
                 <h3>Bringing back the tradition</h3>
                 <p>
@@ -192,7 +199,9 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.BlogOptCon}>
-              <img src="dv12.png" alt="" />
+              <img src="dv12.png" alt="" className={styles.lpImg} />
+              <img src="/nd1.png" alt="" className={styles.mbImg} />
+
               <div className={styles.blogText}>
                 <h3>Bringing back the tradition</h3>
                 <p>
@@ -204,7 +213,9 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.BlogOptCon}>
-              <img src="dv11.png" alt="" />
+              <img src="dv11.png" alt="" className={styles.lpImg} />
+              <img src="/ndv.png" alt="" className={styles.mbImg} />
+
               <div className={styles.blogText}>
                 <h3>Bringing back the tradition</h3>
                 <p>
