@@ -6,11 +6,19 @@ import { AiFillPlayCircle, AiFillInstagram } from "react-icons/ai";
 import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { GoKebabVertical } from "react-icons/go";
+import { GoKebabHorizontal } from 'react-icons/go'
 import styles from "../styles/Home.module.css";
+import { useState } from "react";
+import Nav from "../components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  
+
+
+
+
   return (
     <>
       <Head>
@@ -20,30 +28,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <nav className={styles.nav}>
-          <Link href="/" className={styles.logo}>
-            <img src="/dv20.png" alt="Logo" />
-          </Link>
-          <div className={styles.ham}>
-            <GoKebabVertical className={styles.hamIcon} />
-            <GoKebabVertical className={styles.hamIcon} />
-            <GoKebabVertical className={styles.hamIcon} />
-          </div>
-          <ul className={styles.navLink}>
-            <li>
-              <Link href="/">Episode</Link>
-            </li>
-            <li>
-              <Link href="/">Episode</Link>
-            </li>
-            <li>
-              <Link href="/">Episode</Link>
-            </li>
-            <li>
-              <Link href="/">Episode</Link>
-            </li>
-          </ul>
-        </nav>
+      
+        <Nav />
         <header className={styles.header}>
           <div className={styles.text}>
             <h1>
@@ -303,6 +289,7 @@ export default function Home() {
             <p>A community of individuals united by rhythm and beat.</p>
             <button>Join</button>
           </div>
+          {/* <img src="/dv2.png" alt="" className={styles.communityImg}/> */}
         </section>
 
         <footer className={styles.footer}>

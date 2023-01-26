@@ -39,6 +39,20 @@
   color: #ffffff;
   list-style: none;
 }
+.activeTog li {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0125em;
+  color: #ffffff;
+  list-style: none;
+}
+
+.ham img {
+  width: 40px;
+}
 
 .header {
   display: flex;
@@ -440,7 +454,7 @@
   align-items: flex-end;
   flex-wrap: wrap;
   background: url(/dv011.png);
-  height: 550px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left;
@@ -491,6 +505,8 @@
   max-width: 1140px;
   width: 100%;
   margin: 10em auto 5em;
+  position: relative;
+  padding: 0 0 3em;
 }
 
 .community h1 {
@@ -518,6 +534,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.communityImg {
+  right: -20%;
+  bottom: -20%;
+  position: absolute;
+  width: 600px;
+  height: 600px;
 }
 
 .communityCap img {
@@ -612,10 +636,10 @@
 .ham {
   display: none;
 }
-.mbImg{
-  display: none ;
+.mbImg {
+  display: none;
 }
-.lpImg{
+.lpImg {
   display: block;
 }
 
@@ -666,9 +690,66 @@
   }
 }
 
+.search {
+  
+}
+
 @media (max-width: 900px) {
   .navLink {
-    display: none;
+    top: -100%;
+    width: 100%;
+    height: 600px;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    transition: all 3s ease;
+    background-color: red;
+    z-index: 11;
+  }
+  .mobHam{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+  }
+
+  .search {
+    display: block;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .nav ul .ham {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  .nav ul .ham .hamIcon {
+    transform: rotate(45deg);
+    width: 31px;
+    height: 33px;
+    position: absolute;
+  }
+  .nav ul .ham .hammIcon {
+    transform: rotate(-45deg);
+    width: 31px;
+    height: 33px;
+    position: absolute;
+  }
+  .activeTog {
+    background-color: blue;
+    position: fixed;
+    height: 600px;
+    width: 100%;
+    right: 0%;
+    top: 0;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    transition: all 3s ease;
   }
   .ham {
     display: block;
@@ -679,6 +760,10 @@
     cursor: pointer;
   }
   .hamIcon {
+    width: 10px;
+    height: 30px;
+  }
+  .hammIcon {
     width: 10px;
     height: 30px;
   }
@@ -701,7 +786,7 @@
   .blogText {
     height: 200px;
   }
-    .comment {
+  .comment {
     margin: 10em 0 2em;
   }
 }
@@ -712,16 +797,14 @@
   .section p,
   .blogs h1,
   .podCastSec h1,
-  .comment h1 {
+  .comment h1,
+  .community h1,
+  .text h1 {
     font-weight: 600;
     font-size: 70px;
     line-height: 56px;
   }
-  .text h1 {
-    font-weight: 600;
-    font-size: 70px;
-    line-height: 90px;
-  }
+
   .section {
     margin: 2em 0;
   }
@@ -739,22 +822,51 @@
   .BlogOptCon {
     width: 98%;
   }
-
+  .communityCap {
+    width: 98%;
+    margin: auto;
+  }
 }
 
 @media (max-width: 700px) {
   .castCont {
     width: 90%;
   }
+  .commentOpt {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position-y: bottom;
+    padding-bottom: 3em;
+  }
+  .commentCon {
+    margin: 0 auto 1.5em;
+    width: 98%;
+  }
 }
 
 @media (max-width: 500px) {
-  
+  .text2 p,
+  .section span,
+  .section p,
+  .blogs h1,
+  .podCastSec h1,
+  .comment h1,
+  .community h1,
+  .text h1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .comment h1 {
+    width: 253px;
+    margin-left: auto;
+  }
   .BlogOptCon {
     height: 100%;
     flex-direction: column;
   }
-  .BlogOptCon img{
+  .BlogOptCon img {
     width: 100%;
     height: 200px;
   }
@@ -765,6 +877,16 @@
     display: none;
   }
   .blogText {
-    height: 100%;border-radius: 0px 0px 24px 24px;
+    height: 100%;
+    border-radius: 0px 0px 24px 24px;
+  }
+  .community {
+    margin: 5em 0;
+  }
+  .text span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.001em;
   }
 }
