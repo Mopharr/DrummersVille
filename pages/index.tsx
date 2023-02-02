@@ -1,15 +1,12 @@
 import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import { Inter } from "@next/font/google";
-import { AiFillPlayCircle, AiFillInstagram } from "react-icons/ai";
-import { BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
-import { GoKebabVertical } from "react-icons/go";
-import { GoKebabHorizontal } from 'react-icons/go'
+import { AiFillPlayCircle } from "react-icons/ai";
+
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Nav from "../components/Nav";
+import Footer from "../components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -292,24 +289,7 @@ export default function Home() {
           {/* <img src="/dv2.png" alt="" className={styles.communityImg}/> */}
         </section>
 
-        <footer className={styles.footer}>
-          <div className={styles.footTop}>
-            <Link href="/" className={styles.footLogo}>
-              <img src="/dv20.png" alt="Logo" />
-            </Link>
-            <div className={styles.social}>
-              <BsFacebook />
-              <AiFillInstagram />
-              <BsTwitter />
-              <BsYoutube />
-              <MdEmail />
-            </div>
-          </div>
-
-          <div className={styles.footBottom}>
-            <p>2022, Drummersville Podcast. All rights reserved.</p>
-          </div>
-        </footer>
+      <Footer />
       </main>
     </>
   );

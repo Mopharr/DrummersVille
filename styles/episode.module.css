@@ -108,7 +108,7 @@
 .episodeMap {
   max-width: 1200px;
   width: 100%;
-  margin: 2em auto;
+  margin: 2em auto 0;
 }
 
 .top {
@@ -139,10 +139,6 @@
   color: #ffffff;
   border: none;
   outline: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  text-indent: 1px;
-  text-overflow: "";
 }
 
 .input {
@@ -173,4 +169,164 @@
   outline: none;
 }
 
+.bottom {
+  margin: 8em auto 0em;
+  padding-bottom: 9em;
+}
 
+.bottom h2 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 113px;
+  letter-spacing: -0.015em;
+  margin: 20px 0 1em;
+  text-align: left;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  /* -webkit-text-stroke-color: linear-gradient(90deg, #E8B41C 0%, rgba(232, 180, 28, 0) 0.01%, #E84E1C 100%); */
+  -webkit-text-stroke-color: #e84e1c;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+.btnCard {
+  width: 364px;
+  height: 100%;
+  filter: drop-shadow(0px 2px 40px #000000);
+}
+.btnCard img {
+  border-radius: 24px 24px 0px 0px;
+  height: 60%;
+  width: 100%;
+}
+
+.btnCard > div {
+  height: 40%;
+  width: 100%;
+  background: #292929;
+  border-radius: 0px 0px 24px 24px;
+  padding: 1em;
+}
+
+.btnCard > div p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.0015em;
+  color: #ffffff;
+  margin-bottom: 0.3em;
+}
+
+.btnCard > div span {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.005em;
+  color: #757575;
+}
+
+.btnCard > div button {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px 8px 8px;
+  gap: 4px;
+  width: 77px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  background-color: transparent;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0125em;
+  color: #ffffff;
+  margin-top: 2em;
+}
+.modal {
+  position: absolute;
+  width: 752px;
+  height: 553px;
+  left: 344px;
+  top: 136px;
+  background: #292929;
+  border-radius: 40px;
+}
+
+@media (max-width: 1200px) {
+  .episodeMap,
+  .header {
+    max-width: 98%;
+    padding: 2em 1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .cards {
+    gap: 3em 1em;
+  }
+  .btnCard {
+    width: 300px;
+  }
+  .bottom h2 {
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 56px;
+  }
+  .podcast img {
+    height: 23px;
+  }
+}
+
+@media (max-width: 625px) {
+  .btnCard {
+    width: 95%;
+  }
+  .bottom h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .text h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.0015em;
+  }
+  .text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.0015em;
+  }
+  .text {
+    width: 98%;
+  }
+}
+
+@media (max-width: 450px) {
+  .text h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.0015em;
+  }
+  .text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.005em;
+  }
+}

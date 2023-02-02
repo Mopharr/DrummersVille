@@ -3,13 +3,13 @@ import Nav from "../components/Nav";
 import { AiOutlineClockCircle, AiOutlineSearch } from "react-icons/ai";
 import styles from "../styles/episode.module.css";
 import episodes from "../utilities/episodes.json";
+import { AiFillPlayCircle} from 'react-icons/ai'
+import Footer from "../components/footer";
 
 const episode = () => {
   const [latest, setLatest] = useState([]);
 
-  useEffect(() => {
-    
-  }, []);
+  useEffect(() => {}, []);
 
   return (
     <div className={styles.episode}>
@@ -61,8 +61,27 @@ const episode = () => {
 
         <div className={styles.bottom}>
           <h2>Episodes</h2>
+          <div className={styles.cards}>
+            {episodes.map((item, indec) => {
+              return (
+                <div key={indec} className={styles.btnCard}>
+                  <img src={item.image} alt="" />
+                  <div>
+                    <p>{item.title}</p>
+                    <span>{item.subTitle}</span>
+
+                    <button>
+                      <AiFillPlayCircle />
+                      Play
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
