@@ -259,8 +259,9 @@
   position: absolute;
   width: 752px;
   height: 553px;
-  left: 344px;
-  top: 136px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background: #292929;
   border-radius: 40px;
 }

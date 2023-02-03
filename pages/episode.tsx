@@ -3,11 +3,18 @@ import Nav from "../components/Nav";
 import { AiOutlineClockCircle, AiOutlineSearch } from "react-icons/ai";
 import styles from "../styles/episode.module.css";
 import episodes from "../utilities/episodes.json";
-import { AiFillPlayCircle} from 'react-icons/ai'
+import { AiFillPlayCircle } from "react-icons/ai";
 import Footer from "../components/footer";
+import Modal from "../components/modal";
 
-const episode = () => {
+const Episode = () => {
   const [latest, setLatest] = useState([]);
+  const [modal, setModal] = useState(false);
+  const [details, setDetails] = useState();
+
+  const handleModal = (item: any) => {
+    setModal(true);
+  };
 
   useEffect(() => {}, []);
 
@@ -70,10 +77,11 @@ const episode = () => {
                     <p>{item.title}</p>
                     <span>{item.subTitle}</span>
 
-                    <button>
+                    <button onClick={() => handleModal(item)}>
                       <AiFillPlayCircle />
                       Play
                     </button>
+                    {modal ? <Modal /> : null}
                   </div>
                 </div>
               );
@@ -86,4 +94,4 @@ const episode = () => {
   );
 };
 
-export default episode;
+export default Episode;
