@@ -183,10 +183,11 @@
   letter-spacing: -0.015em;
   margin: 20px 0 1em;
   text-align: left;
-  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   /* -webkit-text-stroke-color: linear-gradient(90deg, #E8B41C 0%, rgba(232, 180, 28, 0) 0.01%, #E84E1C 100%); */
   -webkit-text-stroke-color: #e84e1c;
+  /* text-shadow: 0.05em 0 #e8b41c, 0.1em 0 #e84e1c; */
 }
 
 .cards {
