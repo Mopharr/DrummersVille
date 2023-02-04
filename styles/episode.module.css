@@ -172,6 +172,7 @@
 .bottom {
   margin: 8em auto 0em;
   padding-bottom: 9em;
+  position: relative;
 }
 
 .bottom h2 {
@@ -255,16 +256,107 @@
   letter-spacing: 0.0125em;
   color: #ffffff;
   margin-top: 2em;
+  cursor: pointer;
 }
 .modal {
-  position: absolute;
+  position: fixed;
   width: 752px;
-  height: 553px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   background: #292929;
   border-radius: 40px;
+  padding: 2em;
+}
+.modalTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1em;
+  margin-top: 2em;
+}
+.modalTop img {
+  width: 122.5px;
+  height: 104px;
+  border-radius: 8px;
+}
+.modalTop h3 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.0025em;
+  color: #ffffff;
+  margin-bottom: .4em;
+}
+.modalTop p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0025em;
+  color: #757575;
+  margin-bottom: .3em;
+}
+.modalTop span {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.0025em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.modalBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em 1em;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+.close {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  cursor: pointer;
+}
+
+.play {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 8px;
+  gap: 16px;
+  width: 213.33px;
+  height: 152px;
+  cursor: pointer;
+}
+.play:hover {
+  background: rgba(66, 66, 66, 0.25);
+  border-radius: 16px;
+}
+.play img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+.play p {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.005em;
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -289,6 +381,9 @@
   }
   .podcast img {
     height: 23px;
+  }
+  .modal {
+    width: 97%;
   }
 }
 
@@ -315,6 +410,16 @@
   }
   .text {
     width: 98%;
+  }
+  .modal{
+    padding: 2em 1em;
+  }
+  .modalBottom{
+    gap: 2em .5em;
+  }
+  .play {
+    width: 103.67px;
+    
   }
 }
 

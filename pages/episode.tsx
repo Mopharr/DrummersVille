@@ -13,9 +13,11 @@ const Episode = () => {
   const [details, setDetails] = useState();
 
   const handleModal = (item: any) => {
-    setModal(true);
+    setDetails(item);
+    setModal(true)
   };
 
+ 
   useEffect(() => {}, []);
 
   return (
@@ -81,11 +83,11 @@ const Episode = () => {
                       <AiFillPlayCircle />
                       Play
                     </button>
-                    {modal ? <Modal /> : null}
                   </div>
                 </div>
               );
             })}
+            {modal ? <Modal details={details} setModal = {setModal} /> : null}
           </div>
         </div>
       </section>
