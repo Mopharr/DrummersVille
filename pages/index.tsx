@@ -11,11 +11,6 @@ import Footer from "../components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  
-
-
-
-
   return (
     <>
       <Head>
@@ -25,7 +20,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      
         <Nav />
         <header className={styles.header}>
           <div className={styles.text}>
@@ -51,6 +45,7 @@ export default function Home() {
         <section className={styles.section}>
           <span>Beats</span>
           <p>Music</p>
+
           <div className={styles.podcast}>
             <img src="/dv06.png" alt="" />
             <img src="/dv05.png" alt="" />
@@ -69,6 +64,7 @@ export default function Home() {
 
         <section className={styles.podCastSec}>
           <h1>Podcasts</h1>
+
           <div className={styles.castSecOption}>
             <div className={styles.castCont}>
               <img src="/dv14.png" alt="" />
@@ -125,6 +121,7 @@ export default function Home() {
 
         <section className={styles.blogs}>
           <h1>Blogs</h1>
+
           <div className={styles.blogOpt}>
             <div className={styles.BlogOptCon}>
               <img src="dv10.png" alt="" className={styles.lpImg} />
@@ -213,6 +210,7 @@ export default function Home() {
         </section>
         <section className={styles.comment}>
           <h1>Word on the Street</h1>
+
           <div className={styles.commentOpt}>
             <div className={styles.commentCon}>
               <p>
@@ -289,7 +287,7 @@ export default function Home() {
           {/* <img src="/dv2.png" alt="" className={styles.communityImg}/> */}
         </section>
 
-      <Footer />
+        <Footer />
       </main>
     </>
   );

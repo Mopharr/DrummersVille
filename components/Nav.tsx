@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { BsSearch } from "react-icons/bs";
-import { GoKebabHorizontal } from "react-icons/go";
+import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 
 const Nav = () => {
@@ -18,16 +18,16 @@ const Nav = () => {
       </Link>
       <div className={styles.mobHam}>
         <BsSearch className={styles.search} />
-        <div onClick={handleTog} className={styles.ham}>
-          <img src="/menu.png" alt="" />
-        </div>
+        {tog ? (
+          <FaTimes className={styles.close} onClick={handleTog} />
+        ) : (
+          <div onClick={handleTog} className={styles.ham}>
+            <img src="/menu.png" alt="" />
+          </div>
+        )}
       </div>
 
       <ul className={`${tog ? styles.activeTog : styles.navLink}`}>
-        <div onClick={handleTog} className={styles.ham}>
-          <GoKebabHorizontal className={styles.hamIcon} />
-          <GoKebabHorizontal className={styles.hammIcon} />
-        </div>
         <li>
           <Link href="/episode">Episode</Link>
         </li>
