@@ -6,30 +6,33 @@ import { HiOutlineArrowNarrowRight } from "react-icons/hi";
 import car1 from "../utilities/car1.json";
 import car2 from "../utilities/car2.json";
 import car3 from "../utilities/car3.json";
+import Image from "next/image";
 
 const blog = () => {
   return (
     <div className={styles.blog}>
       <Nav />
       <section className={styles.blogHeader}>
-        <label>Hot Topic</label>
+        <div>
+          <label>Hot Topic</label>
+          <h2>
+            Where Passi<span>on</span> <br /> Meets Inspir<span>ation.</span>
+          </h2>
+          <p>
+            Bringing to you inspiring, educating, motivating and transforming
+            interviews from pro drummers and other music professionals.
+          </p>
+          <button>
+            Read full story <HiOutlineArrowNarrowRight />
+          </button>
 
-        <h2>
-          Where Passi<span>on</span> <br /> Meets Inspir<span>ation.</span>
-        </h2>
-        <p>
-          Bringing to you inspiring, educating, motivating and transforming
-          interviews from pro drummers and other music professionals.
-        </p>
-        <button>
-          Read full story <HiOutlineArrowNarrowRight />
-        </button>
-
-        <div className={styles.image}>
-          <img src="/d.png" alt="" />
-          <img src="/d.png" alt="" />
-          <img src="/d.png" alt="" />
+          <div className={styles.image}>
+            <img src="/d.png" alt="" />
+            <img src="/d.png" alt="" />
+            <img src="/d.png" alt="" />
+          </div>
         </div>
+        <Image src='/d4.png' alt="" className={styles.blogImage} width={675} height={700}/>
       </section>
 
       <section className={styles.playlist}>

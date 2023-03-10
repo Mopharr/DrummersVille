@@ -184,8 +184,8 @@
   letter-spacing: -0.015em;
   margin: 20px 0 1em;
   text-align: left;
-  background: linear-gradient(90deg, #E8B41C 0%, #E84E1C 100%);
--webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  background: linear-gradient(90deg, #e8b41c 0%, #e84e1c 100%);
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: transparent;
   -webkit-background-clip: text;
@@ -194,8 +194,6 @@
   text-fill-color: #0f0f0f;
   width: 420px;
   opacity: 0.5;
-
-
 }
 
 .cards {
@@ -295,7 +293,7 @@
   line-height: 40px;
   letter-spacing: 0.0025em;
   color: #ffffff;
-  margin-bottom: .4em;
+  margin-bottom: 0.4em;
 }
 .modalTop p {
   font-family: "Work Sans", sans-serif;
@@ -305,7 +303,7 @@
   line-height: 16px;
   letter-spacing: 0.0025em;
   color: #757575;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
 }
 .modalTop span {
   font-family: "Work Sans", sans-serif;
@@ -317,7 +315,7 @@
   color: #757575;
   display: flex;
   align-items: center;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .modalBottom {
@@ -365,12 +363,37 @@
   letter-spacing: 0.005em;
   color: #ffffff;
 }
+.search {
+  display: none;
+}
+.search2 {
+  color: #fff;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
 
 @media (max-width: 1200px) {
   .episodeMap,
   .header {
     max-width: 98%;
     padding: 2em 1em;
+  }
+}
+
+@media (max-width: 900px) {
+  .search {
+    display: block;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+  .search2 {
+    display: none;
+  }
+
+  .input {
+    display: none;
   }
 }
 
@@ -418,15 +441,14 @@
   .text {
     width: 98%;
   }
-  .modal{
+  .modal {
     padding: 2em 1em;
   }
-  .modalBottom{
-    gap: 2em .5em;
+  .modalBottom {
+    gap: 2em 0.5em;
   }
   .play {
     width: 103.67px;
-    
   }
 }
 

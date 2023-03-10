@@ -8,13 +8,25 @@
 .blogHeader {
   max-width: 1220px;
   width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   margin: 3em auto 5em;
-  background: url("/d4.png");
+  /* background: url("/d4.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 55%;
+  background-size: 55%; */
   height: 646px;
   position: relative;
+}
+.blogHeader .blogImage {
+  position: absolute;
+  right: 0%;
+  width: 55%;
+  height: 100%;
+  /* object-fit: contain; */
+  z-index: 1;
+  border-radius: 14.7527px;
 }
 
 .blogHeader label {
@@ -49,6 +61,8 @@
   letter-spacing: -0.015em;
   color: #ffffff;
   margin: 0.2em 0;
+  position: relative;
+  z-index: 1111;
 }
 
 .blogHeader h2 span {
@@ -275,26 +289,68 @@
   height: 150px;
   object-fit: cover;
 }
-
+.search {
+  display: none;
+}
+@media (max-width: 900px) {
+  .search {
+    display: block;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+  }
+}
 @media (max-width: 1024px) {
   .cat1 {
     grid-template-columns: auto;
+        padding: 0 0.3em;
   }
   .cat2 {
     grid-template-columns: auto;
+        padding: 0 0.3em;
   }
   .cat3 {
     grid-template-columns: auto;
+        padding: 0 0.3em;
   }
   .cat2Content:nth-child(2) {
     background-color: #292929;
     grid-column: 1 / span 2;
     grid-row: 2 / 4;
   }
-   .cat3Content:nth-child(5) {
+  .cat3Content:nth-child(5) {
     background-color: #292929;
     grid-column: 1 / span 2;
     grid-row: 2 / 4;
   }
 
+  .blogHeader h2 {
+    font-size: 80px;
+    line-height: 90px;
+  }
+  .image {
+    gap: 1em;
+  }
+  .image img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blogHeader {
+    height: 700px;
+  }
+  .blogHeader .blogImage {
+    width: 60%;
+    object-fit: cover;
+    height: 397.09px;
+  }
+  .blogHeader h2 {
+    font-size: 48px;
+    line-height: 56px;
+    width: 300px;
+  }
+  .blogHeader p {
+    width: 179.39px;
+  }
 }

@@ -298,8 +298,9 @@
 
 .castCont {
   width: 320px;
-  /* height: 450px; */
   border-radius: 24px;
+  z-index: 111;
+  position: relative;
 }
 
 .castCont img {
@@ -310,7 +311,7 @@
 }
 
 .castText {
-  padding: 1em;
+  padding: 1.5em 1em;
   margin-top: -0.5em;
   background: #292929;
   border-radius: 0px 0px 24px 24px;
@@ -437,6 +438,8 @@
   width: 500px;
   height: 200px;
   display: flex;
+  position: relative;
+  z-index: 111;
 }
 
 .BlogOptCon img {
@@ -764,9 +767,6 @@
   }
 }
 
-.search {
-}
-
 @media (max-width: 900px) {
   .navLink {
     top: -100%;
@@ -786,12 +786,6 @@
     gap: 1em;
   }
 
-  .search {
-    display: block;
-    font-size: 20px;
-    color: white;
-    cursor: pointer;
-  }
   .nav ul .ham {
     position: absolute;
     top: 5%;
@@ -875,7 +869,7 @@
   .text h1 {
     font-weight: 600;
     font-size: 70px;
-    line-height: 56px;
+    line-height: 80px;
   }
 
   .section {
@@ -930,7 +924,16 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 56px;
+  }
+  .castCont {
+    width: 97%;
+    margin: auto;
+  }
+  .text2 p,
+  .section span,
+  .section p {
     width: 155px;
+    display: block;
   }
   .podCastSec h1 {
     width: 210px;
