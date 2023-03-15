@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
-import styless from "../styles/episode.module.css";
-import stylesss from "../styles/blog.module.css";
 import Link from "next/link";
 import { BsSearch } from "react-icons/bs";
 import { FaTimes } from "react-icons/fa";
@@ -19,8 +17,6 @@ const Nav = () => {
         <img src="/dv20.png" alt="Logo" />
       </Link>
       <div className={styles.mobHam}>
-        <BsSearch className={styless.search} />
-
         {tog ? (
           <FaTimes className={styles.close} onClick={handleTog} />
         ) : (
@@ -31,7 +27,6 @@ const Nav = () => {
       </div>
 
       <ul className={`${tog ? styles.activeTog : styles.navLink}`}>
-
         <li>
           <Link href="/episode">Episode</Link>
         </li>

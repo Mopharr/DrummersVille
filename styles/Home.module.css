@@ -51,6 +51,32 @@
   }
 }
 
+@media (max-width: 465px) {
+  .loading p {
+  animation: blink 2s infinite;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  pointer-events: none;
+  color: #fff;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  font-size: 22px;
+  font-weight: 900;
+}
+.loading a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Lobster", cursive;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+}
+
 .main {
   padding: 1em 0 0;
   background: #0f0f0f;
