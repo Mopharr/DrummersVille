@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import Nav from "../components/Nav";
 import Footer from "../components/footer";
+import Loading from "../components/Loading";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <Loading />
         <Nav />
         <header className={styles.header}>
           <div className={styles.text}>
